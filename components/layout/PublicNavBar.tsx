@@ -1,10 +1,14 @@
+"use client";
+
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
+  { label: "Collectives", href: "/collectives" },
   // { label: "Pricing", href: "/pricing" },
   // { label: "Blog", href: "/blog" },
   // { label: "Raise", href: "/raise", isNew: true },
@@ -42,15 +46,18 @@ export function PublicNavBar() {
             </Link>
           ))}
         </nav>
-
-        {/* CTA */}
+        {/* CTA — onClick will trigger wallet connection */}
         <div className="flex items-center gap-2">
           <Button
-            asChild
             size="sm"
-            className="text-xs font-medium bg-[#1b3a2d] hover:bg-[#152e24] text-white rounded-md h-8 px-4"
+            onClick={() => {
+              // TODO: trigger wallet connect modal
+              console.log("Connect wallet");
+            }}
+            className="group text-xs font-medium bg-[#1b3a2d] hover:bg-[#152e24] text-white rounded-md h-8 px-4 flex items-center gap-1.5 transition-all"
           >
-            <Link href="/collectives">Get Started</Link>
+            Get Started
+            <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5" />
           </Button>
           {/* <Button
             variant="outline"

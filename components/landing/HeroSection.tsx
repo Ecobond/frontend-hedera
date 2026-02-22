@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 export function HeroSection() {
   return (
@@ -17,10 +18,13 @@ export function HeroSection() {
         </p>
         <Button
           asChild
-          size="lg"
-          className="bg-[#1b3a2d] hover:bg-[#152e24] text-white rounded-lg h-11 px-8 text-sm font-medium"
+          size="sm"
+          className="group w-fit mx-auto bg-[#1b3a2d] hover:bg-[#152e24] text-white rounded-lg h-9 px-5 text-sm font-medium inline-flex items-center gap-2"
         >
-          <Link href="/collectives">Get started</Link>
+          <Link href="/collectives">
+            Get started
+            <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5" />
+          </Link>
         </Button>
       </div>
     </section>

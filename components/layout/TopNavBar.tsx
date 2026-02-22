@@ -56,15 +56,24 @@ export function TopNavBar() {
                 className="w-[18px] h-[18px]"
                 strokeWidth={active ? 2 : 1.5}
               />
-              {active && (
-                <span className="ml-1 text-sm font-medium text-gray-900">
-                  {label}
-                </span>
-              )}
             </Link>
           );
         })}
       </nav>
+
+      {/* Center logo */}
+      <Link href="/" className="absolute left-1/2 -translate-x-1/2 flex items-center gap-1.5">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" className="text-gray-900">
+          <path
+            d="M12 22V12M12 12C12 7 16 3 21 3C21 8 18 12 12 12ZM12 12C12 7 8 3 3 3C3 8 6 12 12 12Z"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+        <span className="text-sm font-semibold text-gray-900 tracking-tight">Ecobond</span>
+      </Link>
 
       {/* Right nav icons + avatar */}
       <nav className="flex items-center gap-1">
