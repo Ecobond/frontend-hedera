@@ -58,7 +58,7 @@ export function CollectiveToolbar() {
         size="sm"
         className="h-9 bg-[#1b3a2d] hover:bg-[#152e24] text-white text-sm font-medium rounded-md ml-auto gap-1.5 px-5"
       >
-        <Link href="/collectives/create">
+        <Link href="/projects/create">
           Create
           <ArrowRight className="w-3.5 h-3.5" />
         </Link>

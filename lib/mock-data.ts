@@ -1,4 +1,4 @@
-import { CollectiveCardData } from "@/components/collectives/CollectiveCard";
+import { CollectiveCardData } from "@/components/projects/CollectiveCard";
 
 export const MOCK_COLLECTIVES: CollectiveCardData[] = [
   {

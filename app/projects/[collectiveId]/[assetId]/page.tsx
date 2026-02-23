@@ -56,9 +56,9 @@ export default function AssetDetailPage() {
       <div className="h-1.5 bg-black w-full" />
       <TopNavBar />
       <PageHeader
-        backHref="/collectives/diaspora-house"
+        backHref="/projects/diaspora-house"
         breadcrumbs={[
-          { label: "Diaspora House", href: "/collectives/diaspora-house" },
+          { label: "Diaspora House", href: "/projects/diaspora-house" },
           { label: "Marina Bay Apartments" },
         ]}
       />

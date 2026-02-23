@@ -1,5 +1,5 @@
 import { TopNavBar } from "@/components/layout/TopNavBar";
-import { CreateCollectiveForm } from "@/components/collectives/CreateCollectiveForm";
+import { CreateCollectiveForm } from "@/components/projects/CreateCollectiveForm";
 
 export const metadata = {
   title: "Create a Collective — Ecobond",

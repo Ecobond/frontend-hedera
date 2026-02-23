@@ -6,9 +6,9 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 const navLinks = [
-  { label: "Home", href: "/" },
+  { label: "Circles", href: "/" },
   { label: "About", href: "/about" },
-  { label: "Collectives", href: "/collectives" },
+  { label: "Projects", href: "/projects" },
   // { label: "Pricing", href: "/pricing" },
   // { label: "Blog", href: "/blog" },
   // { label: "Raise", href: "/raise", isNew: true },

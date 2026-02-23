@@ -17,7 +17,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const leftNav = [
   { href: "/settings", icon: Settings, label: "Settings" },
-  { href: "/collectives", icon: UserPlus, label: "Collectives", matchPath: "/collectives" },
+  { href: "/projects", icon: UserPlus, label: "Projects", matchPath: "/projects" },
   { href: "/payments", icon: DollarSign, label: "Payments" },
   { href: "/calendar", icon: CalendarDays, label: "Calendar" },
   { href: "/overview", icon: LayoutGrid, label: "Overview" },

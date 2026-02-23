@@ -37,7 +37,7 @@ function PaymentPill({ value }: { value: "Free" | "Paid" }) {
 
 export function CollectiveCard({ collective }: { collective: CollectiveCardData }) {
   return (
-    <Link href={`/collectives/${collective.id}`}>
+    <Link href={`/projects/${collective.id}`}>
       <div className="bg-white border border-gray-200 rounded-lg p-4 flex flex-col gap-3 hover:shadow-sm hover:border-gray-300 transition-all cursor-pointer h-full">
         {/* Logo */}
         <div className="flex items-start justify-between">

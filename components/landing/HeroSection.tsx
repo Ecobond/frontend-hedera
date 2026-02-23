@@ -21,7 +21,7 @@ export function HeroSection() {
           size="sm"
           className="group w-fit mx-auto bg-[#1b3a2d] hover:bg-[#152e24] text-white rounded-lg h-9 px-5 text-sm font-medium inline-flex items-center gap-2"
         >
-          <Link href="/collectives">
+          <Link href="/projects">
             Get started
             <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5" />
           </Link>

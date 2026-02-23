@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import { TopNavBar } from "@/components/layout/TopNavBar";
-import { CollectiveTabs } from "@/components/collectives/CollectiveTabs";
-import { CollectiveToolbar } from "@/components/collectives/CollectiveToolbar";
-import { CollectiveCard } from "@/components/collectives/CollectiveCard";
+import { CollectiveTabs } from "@/components/projects/CollectiveTabs";
+import { CollectiveToolbar } from "@/components/projects/CollectiveToolbar";
+import { CollectiveCard } from "@/components/projects/CollectiveCard";
 import { MOCK_COLLECTIVES } from "@/lib/mock-data";
 
 export default function CollectivesPage() {
@@ -21,7 +21,7 @@ export default function CollectivesPage() {
         <CollectiveTabs activeTab={activeTab} onTabChange={setActiveTab} />
 
         {/* Page title */}
-        <h1 className="text-2xl font-bold text-gray-900 mb-6">Collectives</h1>
+        <h1 className="text-2xl font-bold text-gray-900 mb-6">Projects</h1>
 
         {/* Search + filter toolbar */}
         <CollectiveToolbar />
